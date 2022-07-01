@@ -31,20 +31,20 @@ const Home = ({ navigation }) => {
       style={styles.container}
       imageStyle={{ resizeMode: "contain", transform: [{ scale: 1.5 }] }}
     >
-      <Text style={{color:'white', fontSize: 30}}> JACK THE BETRAYER{"\n"}</Text>
+      <Text style={{color:'white', fontSize: 30}}> JACK THE RIPPER{"\n"}</Text>
                 
-      <Text style={{color:'white', fontSize: 15}}> Há um traidor entre nós! Depois de iniciar a partida, clique no botão e puxe 4 cartas, se uma delas for um valete de espadas você perde o jogo. Mas se em 3 tentativas o valete de espadas não for puxado, a vitoria é sua! </Text>
+      <Text style={{color:'white', fontSize: 15}}> Jack o Estripador está a solta! Você caminha pelas ruas de Londres a noite na esperança de chegar em casa. Será que você irá cruzar com ele?  </Text>
       <View style={{ flex: 2, justifyContent: "center", alignItems:"center", paddingTop: "100%" }}>
         <TouchableOpacity 
                   style={{alignItems: 'center',
                           borderColor:'white',
                           borderWidth: 2,
                           borderRadius: 30,
-                          width: 150,
+                          width: 200,
                           }} 
                   
                   onPress={inciarPartida}>
-                    <Text style={{color:'white', fontSize: 20}}> Iniciar Partida </Text>
+                    <Text style={{color:'white', fontSize: 20}}> TESTE SUA SORTE! </Text>
                   </TouchableOpacity>
         {/* <Button title="Iniciar Partida" onPress={inciarPartida} /> */}
       </View>
