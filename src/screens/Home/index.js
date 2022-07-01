@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, Button, ImageBackground } from "react-native";
+import { View, Text, Button, ImageBackground, TouchableOpacity } from "react-native";
 import { getDeckId } from "../../services/axiosClient";
 import { styles } from "./styles";
 import bgImg from "../../images/AAAA.webp";
@@ -34,8 +34,19 @@ const Home = ({ navigation }) => {
       <Text style={{color:'white', fontSize: 30}}> JACK THE BETRAYER{"\n"}</Text>
                 
       <Text style={{color:'white', fontSize: 15}}> Há um traidor entre nós! Depois de iniciar a partida, clique no botão e puxe 4 cartas, se uma delas for um valete de espadas você perde o jogo. Mas se em 3 tentativas o valete de espadas não for puxado, a vitoria é sua! </Text>
-      <View style={{ flex: 2, justifyContent: "center", paddingTop: "100%" }}>
-        <Button title="Iniciar Partida" onPress={inciarPartida} />
+      <View style={{ flex: 2, justifyContent: "center", alignItems:"center", paddingTop: "100%" }}>
+        <TouchableOpacity 
+                  style={{alignItems: 'center',
+                          borderColor:'white',
+                          borderWidth: 2,
+                          borderRadius: 30,
+                          width: 150,
+                          }} 
+                  
+                  onPress={inciarPartida}>
+                    <Text style={{color:'white', fontSize: 20}}> Iniciar Partida </Text>
+                  </TouchableOpacity>
+        {/* <Button title="Iniciar Partida" onPress={inciarPartida} /> */}
       </View>
     </ImageBackground>
   );

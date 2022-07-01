@@ -105,11 +105,11 @@ const Game = ({ route }) => {
                           borderColor:'white',
                           borderWidth: 2,
                           borderRadius: 30,
-                          width: 150,
+                          width: 200,
                           }} 
                   
                   onPress={adicionarCarta}>
-                    <Text style={{color:'white', fontSize: 20}}> APERTE AQUI </Text>
+                    <Text style={{color:'white', fontSize: 20}}> TESTE SUA SORTE! </Text>
                   </TouchableOpacity>
                 </View>
       </View>
