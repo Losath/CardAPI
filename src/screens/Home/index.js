@@ -20,8 +20,11 @@ const Home = ({ navigation }) => {
   }, []);
 
   const inciarPartida = async () => {
+    setLoading(true);
+      const id = await getDeckId(); 
+      setLoading(false);
     navigation.navigate("Game", {
-      deckId: idDeck,
+      deckId: id,
     });
   };
 
